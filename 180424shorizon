@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<style>
+@font-face{font-family:"LM Sans 10";src:url(/font/lmsans10-regular.otf)}
+@font-face{font-family:"LM Sans 10";src:url(/font/lmsans10-bold.otf);font-weight:bold}
+@font-face{font-family:"LM Mono 10";src:url(/font/lmmono10-regular.otf)}
+header{font-weight:bold}
+body{text-size-adjust:100%;font-family:"LM Sans 10",Arial}
+a{text-size-adjust:100%;font-family:"LM Mono 10","Courier New";color:blue}
+span{font-family:"LM Sans 10",Arial}
+</style>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML></script>
+</head>
+<body>
+<div style="width:1024px;margin:auto;text-align:justify">
+<div style="text-align:center">
+<h2>A Note on "Short Horizon" Paper</h2>
+<h3><span style="font-weight:normal">Junyong Kim</span></h3>
+<h3><span style="font-weight:normal">April 24, 2018</span></h3>
+</div>
+<ul><li><a href=/notebook/index.htm>index.htm</a></li></ul>
+<h2>April 2018</h2>
+<h3>24th</h3>
+<p>This note is initiated.</p>
+</div>
+</body>
+</html>
