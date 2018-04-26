@@ -28,6 +28,35 @@ span{font-family:"LM Sans 10",Arial}
 <li>Usually one stock can be viewed under <i>short sale constraint</i> when more than 10% of the out-standing shares are shorted.</li>
 <li>So far the papers published in journals have empirically demonstrated the negative relation be-tween the volume of short selling and the stock return (e.g. Jones and Lamont, 2002).</li>
 </ul>
+<p>Here is the data structure.</p>
+<table style="margin:auto;border-collapse:collapse">
+<tr>
+<td style="border:1px solid black">Total short interest</td>
+<td style="border:1px solid black">Maturity (tenure)</td>
+<td style="border:1px solid black">Observability</td>
+</tr>
+<tr>
+<td style="border:1px solid black">100</td>
+<td style="border:1px solid black">10</td>
+<td style="border:1px solid black">Observable</td>
+</tr>
+<tr>
+<td style="border:1px solid black">50</td>
+<td style="border:1px solid black">5</td>
+<td style="border:1px solid black">Unobservable</td>
+</tr>
+<tr>
+<td style="border:1px solid black">50</td>
+<td style="border:1px solid black">15</td>
+<td style="border:1px solid black">Unobservable</td>
+</tr>
+</table>
+<ul>
+<li><i>Short interest</i> is the number of or the percentage of the stocks sold by short sellers in the market.</li>
+<li><i>Maturity</i> or <i>tenure</i> is the days from the first short selling transaction; according to the table, there are 100 stocks sold by short sellers and the interest-weighted maturity is 10, but there are two short sellers who sold 50 stocks 5 days ago and 50 stocks 15 days ago, respectively.</li>
+<li>What is observable is the very first aggregated data; in contrast, one cannot explicitly track all the records inside the aggregated one, so one must assume something in order to back out the detail inside, for example hypothetical distribution.</li>
+<li>Due to this unclear aggregation, the lending cost (or fee) the short sellers must pay is ambiguous.</li>
+</ul>
 <h3>24th</h3>
 <p>This note is initiated.</p>
 </div>
