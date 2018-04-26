@@ -57,6 +57,33 @@ span{font-family:"LM Sans 10",Arial}
 <li>What is observable is the very first aggregated data; in contrast, one cannot explicitly track all the records inside the aggregated one, so one must assume something in order to back out the detail inside, for example hypothetical distribution.</li>
 <li>Due to this unclear aggregation, the lending cost (or fee) the short sellers must pay is ambiguous.</li>
 </ul>
+This is the way to back out the details.
+<table style="margin:auto;border-collapse:collapse">
+<tr>
+<td style="border:1px solid black;text-align:center">Day</td>
+<td style="border:1px solid black;text-align:center">Short interest</td>
+<td style="border:1px solid black;text-align:center">Maturity</td>
+</tr>
+<tr>
+<td style="border:1px solid black;text-align:center">0</td>
+<td style="border:1px solid black;text-align:center">100</td>
+<td style="border:1px solid black;text-align:center">10</td>
+</tr>
+<tr>
+<td style="border:1px solid black;text-align:center">1</td>
+<td style="border:1px solid black;text-align:center">110</td>
+<td style="border:1px solid black;text-align:center">10.5</td>
+</tr>
+</table>
+<ul>
+<li>If this is the case, then the net increase of short interest is 10.</li>
+<li>The database also provides the newly added short position day by day and this amount is de-nominated by dollars, so one can guess (would not be 100% accurate though) the number of shares using the closing price.</li>
+<li>If the daily change is 10 and the net position is also 10, then there would be zero change in the existing position on that day, so to speak, there was no change in the existing 100 outstanding short interest and 10 additional short interest is only due to the newly participated short sellers.</li>
+<li>In contrast, if the newly participated short interest is 20, then one can conclude that there was 10 decrease in the existing short positions and 20 positions are newly participating.</li>
+<li>Simply, \(\text{Net change}-\text{Daily new}=\text{Left amount}\).</li>
+</ul>
+<p>The dilemma is that it is still impossible to decompose the outstanding short interest into more detailed information. Based on 30 days or 60 days or any arbitrary days, one must guess the distribution of short interest recursively. Since we are observing discrete short selling records, the distribution of maturity would be based on integer rather than continuous. Should be updated using many possible candidate days.</p>
+<p style="text-align:center"><img src=/notebook/miscellany/180425shorizon2.png><img src=/notebook/miscellany/180425shorizon3.png></p>
 <h3>24th</h3>
 <p>This note is initiated.</p>
 </div>
