@@ -26,7 +26,7 @@ span{font-family:"LM Sans 10",Arial}
 <li>The <i>Markit</i> short selling data cover about 80~90% of the institutions offering the service, so there may be a certain institution who is not included in this sample.</li>
 <li>Through the Markit database one can observe both lending capability and exact lending volume offered by participating institutions.</li>
 <li>Usually one stock can be viewed under <i>short sale constraint</i> when more than 10% of the outstanding shares are shorted.</li>
-<li>So far the papers published in journals have empirically demonstrated the negative relation be-tween the volume of short selling and the stock return (e.g. Jones and Lamont, 2002).</li>
+<li>So far the papers published in journals have empirically demonstrated the negative relation between the volume of short selling and the stock return (e.g. Jones and Lamont, 2002).</li>
 </ul>
 <p>Here is the data structure.</p>
 <table style="margin:auto;border-collapse:collapse">
@@ -54,7 +54,7 @@ span{font-family:"LM Sans 10",Arial}
 <ul>
 <li><i>Short interest</i> is the number of or the percentage of the stocks sold by short sellers in the market.</li>
 <li><i>Maturity</i> or <i>tenure</i> is the days from the first short selling transaction; according to the table, there are 100 stocks sold by short sellers and the interest-weighted maturity is 10, but there are two short sellers who sold 50 stocks 5 days ago and 50 stocks 15 days ago, respectively.</li>
-<li>What is observable is the very first aggregated data; in contrast, one cannot explicitly track all the records inside the aggregated one, so one must assume something in order to back out the detail inside, for example hypothetical distribution.</li>
+<li>What is observable is the very first aggregated data; in contrast, one cannot explicitly track all the records inside the aggregated one, so one must assume something in order to back out the detail inside, for example a hypothetical distribution.</li>
 <li>Due to this unclear aggregation, the lending cost (or fee) the short sellers must pay is ambiguous.</li>
 </ul>
 This is the way to back out the details.
@@ -77,7 +77,7 @@ This is the way to back out the details.
 </table>
 <ul>
 <li>If this is the case, then the net increase of short interest is 10.</li>
-<li>The database also provides the newly added short position day by day and this amount is de-nominated by dollars, so one can guess (would not be 100% accurate though) the number of shares using the closing price.</li>
+<li>The database also provides the newly added short position day by day and this amount is denominated in dollars, so one can guess (would not be 100% accurate though) the number of shares using the closing price.</li>
 <li>If the daily change is 10 and the net position is also 10, then there would be zero change in the existing position on that day, so to speak, there was no change in the existing 100 outstanding short interest and 10 additional short interest is only due to the newly participated short sellers.</li>
 <li>In contrast, if the newly participated short interest is 20, then one can conclude that there was 10 decrease in the existing short positions and 20 positions are newly participating.</li>
 <li>Simply, \(\text{Net change}-\text{Daily new}=\text{Left amount}\).</li>
@@ -92,15 +92,14 @@ This is the way to back out the details.
 <p style="text-align:center"><img src=/notebook/miscellany/180425shorizon5.png><img src=/notebook/miscellany/180425shorizon6.png></p>
 <p>Stock A short sellers are short term, while Stock B short sellers are long term.</p>
 <ul>
-<li>For each maturity horizon, value-weighted (short-interest-weighted) future returns can be calculated; for instance, if there are 7,000 short interests with 1 week maturity for Stock A and 3,000 interests with 1 week maturity for Stock B at time \(t\), then the value-weighted return at time \(t+1\) can be calculated by \(r_{\text{1 week maturity},t-1}=\frac{7,000}{7,000+3,000}r_{A,t+1}+\frac{3,000}{7,000+3,000}r_{B,t+1}\).</li>
-<li>If, for example, \(r_\text{1 week maturity}>r_\text{1 year maturity}\), then one can conclude that short interests with shorter maturity (short term short sellers) are more informative than those with longer maturity (long term short sellers); the predictability of the maturity.</li>
-<li>One needs to investigate whether short sellers earned from their transactions.</li>
-<li>Covering returns can be calculated as follows.</li>
+<li>For each maturity horizon, value-weighted (short interest-weighted) future returns can be calculated; for instance, if there is 7,000 short interest with 1 week maturity for Stock A and 3,000 interests with 1 week maturity for Stock B at time \(t\), then the value-weighted return at time \(t+1\) can be calculated by \(r_{\text{1 week maturity},t+1}=\frac{7,000}{7,000+3,000}r_{A,t+1}+\frac{3,000}{7,000+3,000}r_{B,t+1}\).</li>
+<li>If, for example, \(r_\text{1 week maturity}>r_\text{1 year maturity}\), then one can conclude that short interest with shorter maturity (short term short sellers) is more informative than those with longer maturity (long term short sellers); the predictability of the maturity.</li>
+<li>One needs to investigate whether short sellers earned from their transactions. Correspondingly, covering returns can be calculated as follows.</li>
 </ul>
 <p style="text-align:center;font-family:Courier New">March 5th, 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;March 18th, 2018<br>&#9500;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9508;<br>Borrowed and sold 1,000 stocks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy 1,000 stocks and repay</p>
 <ul>
 <li>For this transaction, the corresponding return is \(\text{Covering return}=\frac{P_\text{March 18th}-P_\text{March 5th}}{P_\text{March 5th}}\).</li>
-<li>The performance must be measured by "after-netting-fee" basis; if the covering return is 10%, while the corresponding fee is 15%, then the overall performance is &minus;5%, i.e. \(\text{Performance}=\text{Covering return}-\text{Fee}\).</li>
+<li>The performance must be measured based on an "after-netting-fee" basis; if the covering return is 10%, while the corresponding fee is 15%, then the overall performance is &minus;5%, i.e. \(\text{Performance}=\text{Covering return}-\text{Fee}\).</li>
 </ul>
 <p>Covering decisions can be made due to many reasons.</p>
 <ul>
