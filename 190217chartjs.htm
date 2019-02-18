@@ -50,7 +50,7 @@ new Chart(document.getElementById("Figure1"),
                 borderColor:"Red",
                 backgroundColor:"Red",
                 fill:false}]},
-        options:{responsive:0}});
+        options:{responsive:false}});
 new Chart(document.getElementById("Figure2"),
     {type:"scatter",
         data:{datasets:[{label:"Quadratic",
@@ -62,7 +62,7 @@ new Chart(document.getElementById("Figure2"),
             borderColor:"Blue",
             backgroundColor:"Blue",
             fill:false,
-            showLine:1},
+            showLine:true},
             {label:"Exponential",
             data:[{x:1,y:2},
                 {x:2,y:4},
@@ -72,8 +72,8 @@ new Chart(document.getElementById("Figure2"),
             borderColor:"Red",
             backgroundColor:"Red",
             fill:false,
-            showLine:1}]},
-        options:{responsive:0}});
+            showLine:true}]},
+        options:{responsive:false}});
 </script>
 </body>
 </html>
