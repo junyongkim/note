@@ -10,6 +10,7 @@ a{text-size-adjust:100%;font-family:"LM Mono 10",Consolas;color:blue}
 span{font-family:"LM Sans 10",Calibri}
 </style>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js></script>
 <meta name=viewport content=width=1024px>
 </head>
 <body>
@@ -26,8 +27,14 @@ span{font-family:"LM Sans 10",Calibri}
 <h3 style="text-align:center"><span style="font-weight:normal">February 17th, 2019</span></h3>
 <h2>February 2019</h2>
 <h3>17th</h3>
-<p>This note is initiated.</p>
+<p>This note is initiated. The following is an example of the "line" plot by Chart.js.</p>
+<canvas id=Figure1 style="width:640px;height:480px;margin:auto"></canvas>
 </div>
 </div>
+<script>
+Chart.defaults.global.defaultFontFamily="Consolas";
+Chart.defaults.global.defaultFontSize=11*96/72;
+new Chart(document.getElementById("Figure1"),{type:"line",data:{labels:[1,2,3,4],datasets:[{label:"Quadratic",data:[1,4,9,16],borderColor:"Blue",backgroundColor:"Blue",fill:0},{label:"Exponential",data:[2,4,8,16],borderColor:"Red",backgroundColor:"Red",fill:0}]},options:{responsive:0}});
+</script>
 </body>
 </html>
