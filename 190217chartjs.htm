@@ -35,7 +35,7 @@ span{font-family:"LM Sans 10",Calibri}
 </div>
 </div>
 <script>
-Chart.defaults.global.defaultFontFamily="LM Mono 10";
+Chart.defaults.global.defaultFontFamily="Consolas,Courier New";
 Chart.defaults.global.defaultFontSize=11*96/72;
 new Chart(document.getElementById("Figure1"),{type:"line",data:{labels:[1,2,3,4,5],datasets:[{label:"Quadratic",data:[1,4,9,16,25],borderColor:"Blue",backgroundColor:"Blue",fill:false},{label:"Exponential",data:[2,4,8,16,32],borderColor:"Red",backgroundColor:"Red",fill:false}]},options:{responsive:0}});
 new Chart(document.getElementById("Figure2"),{type:"scatter",data:{datasets:[{label:"Quadratic",data:[{x:1,y:1},{x:2,y:4},{x:3,y:9},{x:4,y:16},{x:5,y:25}],borderColor:"Blue",backgroundColor:"Blue",fill:false,showLine:1},{label:"Exponential",data:[{x:1,y:2},{x:2,y:4},{x:3,y:8},{x:4,y:16},{x:5,y:32}],borderColor:"Red",backgroundColor:"Red",fill:false,showLine:1}]},options:{responsive:0}});
