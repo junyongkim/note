@@ -29,7 +29,9 @@ span{font-family:"LM Sans 10",Calibri}
 <h3>18th</h3>
 <p>The following is another example of the "scatter" plot by Chart.js.</p>
 <p style="text-align:center"><canvas id=Figure3 style="width:512px;height:384px;display:inline-block"></canvas></p>
-<p>Note that \(x_i,\varepsilon_i\sim{}N(0,1)\) i.i.d. and \(y_i=x_i+\varepsilon_i\) for all \(i\in\{1,\cdots,100\}\).</p>
+<p>Note that \(x_i,\varepsilon_i\sim{}N(0,1)\) i.i.d. and \(y_i=x_i+\varepsilon_i\) for all \(i\in\{1,\cdots,100\}\). The following are two examples of of the "bar" and "horizontalBar" plots by Chart.js.</p>
+<p style="text-align:center"><canvas id=Figure4 style="width:512px;height:384px;display:inline-block"></canvas><canvas id=Figure5 style="width:512px;height:384px;display:inline-block"></canvas></p>
+<p>Note that "bar" can include "line," while "line" cannot include "bar."</p>
 <h3>17th</h3>
 <p>This note is initiated. The following is an example of the "line" plot by Chart.js.</p>
 <p style="text-align:center"><canvas id=Figure1 style="width:512px;height:384px;display:inline-block"></canvas></p>
@@ -286,6 +288,35 @@ new Chart(document.getElementById("Figure3"),
                 backgroundColor:"Red",
                 fill:false}]},
         options:{responsive:false}});
+new Chart(document.getElementById("Figure4"),
+    {type:"bar",
+        data:{labels:[1,2,3,4,5],
+            datasets:[{label:"Quadratic",
+                data:[1,4,9,16,25],
+                borderColor:"Blue",
+                backgroundColor:"Blue",
+                fill:false},{type:"line",
+                label:"Exponential",
+                data:[2,4,8,16,32],
+                borderColor:"Red",
+                backgroundColor:"Red",
+                fill:false}]},
+        options:{responsive:false,
+            yAxes:[{ticks:{beginAtZero:true}}]}});
+new Chart(document.getElementById("Figure5"),
+    {type:"horizontalBar",
+        data:{labels:[1,2,3,4,5],
+            datasets:[{label:"Quadratic",
+                data:[1,4,9,16,25],
+                borderColor:"Blue",
+                backgroundColor:"Blue",
+                fill:false},{label:"Exponential",
+                data:[2,4,8,16,32],
+                borderColor:"Red",
+                backgroundColor:"Red",
+                fill:false}]},
+        options:{responsive:false,
+            xAxes:[{ticks:{beginAtZero:true}}]}});
 </script>
 </body>
 </html>
