@@ -1,18 +1,20 @@
 Chart.defaults.global.defaultFontFamily="'LM Mono 10',Consolas";
 Chart.defaults.global.defaultFontSize=11*96/72;
+Papa.parse("/notebook/misc/190220chartjs1.csv",{download:true,complete:function(results){
 new Chart(document.getElementById("Figure1"),
     {type:"line",
-        data:{labels:[1,2,3,4,5],
+        data:{labels:results.data[0],
             datasets:[{label:"Quadratic",
-                data:[1,4,9,16,25],
+                data:results.data[1],
                 borderColor:"Blue",
                 backgroundColor:"Blue",
                 fill:false},{label:"Exponential",
-                data:[2,4,8,16,32],
+                data:results.data[2],
                 borderColor:"Red",
                 backgroundColor:"Red",
                 fill:false}]},
         options:{responsive:false}});
+}});
 new Chart(document.getElementById("Figure2"),
     {type:"scatter",
         data:{datasets:[{label:"Quadratic",
