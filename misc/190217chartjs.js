@@ -16,15 +16,16 @@ Papa.parse("/notebook/misc/190220chartjs1.csv",{download:true,complete:function(
             options:{responsive:false}});
 }});
 Papa.parse("/notebook/misc/190220chartjs2.csv",{download:true,header:true,complete:function(results){
+    results.data1=[];results.data2=[];for(i=0;i<results.data.length;i++){results.data1[i]={};results.data1[i].x=results.data[i].x;results.data1[i].y=results.data[i].y1;results.data2[i]={};results.data2[i].x=results.data[i].x;results.data2[i].y=results.data[i].y2;}
     new Chart(document.getElementById("Figure2"),
         {type:"scatter",
             data:{datasets:[{label:"Quadratic",
-                    data:results.data.slice(0,5),
+                    data:results.data1,
                     borderColor:"Blue",
                     backgroundColor:"Blue",
                     fill:false,
                     showLine:true},{label:"Exponential",
-                    data:results.data.slice(5,10),
+                    data:results.data2,
                     borderColor:"Red",
                     backgroundColor:"Red",
                     fill:false,
