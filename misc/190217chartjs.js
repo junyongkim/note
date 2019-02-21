@@ -33,14 +33,15 @@ Papa.parse("/notebook/misc/190220chartjs2.csv",{download:true,header:true,comple
             options:{responsive:false}});
 }});
 Papa.parse("/notebook/misc/190220chartjs3.csv",{download:true,header:true,complete:function(results){
+    results.data1=[];results.data2=[];for(i=0;i<results.data.length-1;i++){results.data1[i]={};results.data1[i].x=results.data[i].x1;results.data1[i].y=results.data[i].y1;results.data2[i]={};results.data2[i].x=results.data[i].x2;results.data2[i].y=results.data[i].y2;}
     new Chart(document.getElementById("Figure3"),
         {type:"scatter",
             data:{datasets:[{label:"call streaminit(1)",
-                    data:results.data.slice(0,100),
+                    data:results.data1,
                     borderColor:"Blue",
                     backgroundColor:"Blue",
                     fill:false},{label:"call streaminit(2)",
-                    data:results.data.slice(100,200),
+                    data:results.data2,
                     borderColor:"Red",
                     backgroundColor:"Red",
                     fill:false}]},
