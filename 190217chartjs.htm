@@ -27,6 +27,8 @@ span{font-family:"LM Sans 10",Calibri}
 <h3 style="text-align:center"><span style="font-weight:normal">JY Kim</span></h3>
 <h3 style="text-align:center"><span style="font-weight:normal">February 17th, 2019</span></h3>
 <h2>February 2019</h2>
+<h3>21st</h3>
+<p>I restructured some of the data. Two things are tricky. First, it seems GitHub adds a newline at the end of data files. This affects the "results.data.length" variable in Papa Parse. Second, "scatter" only recognizes an array of objects whose attributes are "x" and "y." "X" is unallowed, but objects with "x," "y," and "z" are accepted.</p>
 <h3>20th</h3>
 <p>I separated the data from the JavaScript code and created the corresponding comma-separated values files. I added Papa Parse to feed the data to Chart.js, but manipulating data in JavaScript is somewhat counterintuitive.</p>
 <h3>18th</h3>
