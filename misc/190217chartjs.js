@@ -81,3 +81,17 @@ Papa.parse("/notebook/misc/190220chartjs5.csv",{download:true,complete:function(
             options:{responsive:false,
                 xAxes:[{ticks:{beginAtZero:true}}]}});
 }});
+Papa.parse("/notebook/misc/190226chartjs.csv",{download:true,header:true,complete:function(results){
+    results.data.splice(results.data.length-1,results.data.length-1);
+    new Chart(document.getElementById("Figure6"),
+        {type:"scatter",
+            data:{datasets:[{label:"Michigan",
+                    data:results.data,
+                    borderColor:"Blue",
+                    backgroundColor:"Blue",
+                    fill:false,
+                    showLine:true,
+                    lineTension:0,
+                    pointRadius:0}]},
+            options:{responsive:false}});
+}});
