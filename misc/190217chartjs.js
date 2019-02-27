@@ -106,16 +106,16 @@ Papa.parse
         header:true,
         complete:function(results)
         {
-            results.data1=[];
-            results.data2=[];
-            for(i=0;i<results.data.length-1;i++)
+            results.data.splice(results.data.length-1,results.data.length-1);
+            results.data.subdata=[[],[]];
+            for(i=0;i<results.data.length;i++)
             {
-                results.data1[i]={};
-                results.data1[i].x=results.data[i].x1;
-                results.data1[i].y=results.data[i].y1;
-                results.data2[i]={};
-                results.data2[i].x=results.data[i].x2;
-                results.data2[i].y=results.data[i].y2;
+                results.data.subdata[0][i]={};
+                results.data.subdata[0][i].x=results.data[i].x1;
+                results.data.subdata[0][i].y=results.data[i].y1;
+                results.data.subdata[1][i]={};
+                results.data.subdata[1][i].x=results.data[i].x2;
+                results.data.subdata[1][i].y=results.data[i].y2;
             }
             new Chart
             (
@@ -158,6 +158,7 @@ Papa.parse
         download:true,
         complete:function(results)
         {
+            results.data.splice(results.data.length-1,results.data.length-1);
             new Chart
             (
                 document.getElementById("Figure4"),
@@ -203,6 +204,7 @@ Papa.parse
         download:true,
         complete:function(results)
         {
+            results.data.splice(results.data.length-1,results.data.length-1);
             new Chart
             (
                 document.getElementById("Figure5"),
@@ -299,8 +301,8 @@ Papa.parse
                             {
                                 label:"FEDFUNDS",
                                 data:results.data,
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"Red",
+                                borderColor:"Red",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -338,8 +340,8 @@ Papa.parse
                             {
                                 label:"cay",
                                 data:results.data,
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"Lime",
+                                borderColor:"Lime",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -364,32 +366,28 @@ Papa.parse
         header:true,
         complete:function(results)
         {
-            results.data1=[];
-            results.data2=[];
-            results.data3=[];
-            results.data4=[];
-            results.data5=[];
-            results.data6=[];
+            results.data.splice(results.data.length-1,results.data.length-1);
+            results.data.subdata=[[],[],[],[],[],[]];
             for(i=0;i<results.data.length-1;i++)
             {
-                results.data1[i]={};
-                results.data1[i].x=results.data[i].x;
-                results.data1[i].y=results.data[i].y1;
-                results.data2[i]={};
-                results.data2[i].x=results.data[i].x;
-                results.data2[i].y=results.data[i].y2;
-                results.data3[i]={};
-                results.data3[i].x=results.data[i].x;
-                results.data3[i].y=results.data[i].y3;
-                results.data4[i]={};
-                results.data4[i].x=results.data[i].x;
-                results.data4[i].y=results.data[i].y4;
-                results.data5[i]={};
-                results.data5[i].x=results.data[i].x;
-                results.data5[i].y=results.data[i].y5;
-                results.data6[i]={};
-                results.data6[i].x=results.data[i].x;
-                results.data6[i].y=results.data[i].y6;
+                results.data.subdata[0][i]={};
+                results.data.subdata[0][i].x=results.data[i].x;
+                results.data.subdata[0][i].y=results.data[i].y1;
+                results.data.subdata[1][i]={};
+                results.data.subdata[1][i].x=results.data[i].x;
+                results.data.subdata[1][i].y=results.data[i].y2;
+                results.data.subdata[2][i]={};
+                results.data.subdata[2][i].x=results.data[i].x;
+                results.data.subdata[2][i].y=results.data[i].y3;
+                results.data.subdata[3][i]={};
+                results.data.subdata[3][i].x=results.data[i].x;
+                results.data.subdata[3][i].y=results.data[i].y4;
+                results.data.subdata[4][i]={};
+                results.data.subdata[4][i].x=results.data[i].x;
+                results.data.subdata[4][i].y=results.data[i].y5;
+                results.data.subdata[5][i]={};
+                results.data.subdata[5][i].x=results.data[i].x;
+                results.data.subdata[5][i].y=results.data[i].y6;
             }
             new Chart
             (
