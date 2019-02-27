@@ -7,6 +7,7 @@ Papa.parse
         download:true,
         complete:function(results)
         {
+            results.data.splice(results.data.length-1,results.data.length-1);
             new Chart
             (
                 document.getElementById("Figure1"),
@@ -50,16 +51,16 @@ Papa.parse
         header:true,
         complete:function(results)
         {
-            results.data1=[];
-            results.data2=[];
-            for(i=0;i<results.data.length-1;i++)
+            results.data.splice(results.data.length-1,results.data.length-1);
+            results.data.subdata=[[],[]];
+            for(i=0;i<results.data.length;i++)
             {
-                results.data1[i]={};
-                results.data1[i].x=results.data[i].x;
-                results.data1[i].y=results.data[i].y1;
-                results.data2[i]={};
-                results.data2[i].x=results.data[i].x;
-                results.data2[i].y=results.data[i].y2;
+                results.data.subdata[0][i]={};
+                results.data.subdata[0][i].x=results.data[i].x;
+                results.data.subdata[0][i].y=results.data[i].y1;
+                results.data.subdata[1][i]={};
+                results.data.subdata[1][i].x=results.data[i].x;
+                results.data.subdata[1][i].y=results.data[i].y2;
             }
             new Chart
             (
@@ -72,7 +73,7 @@ Papa.parse
                         [
                             {
                                 label:"Quadratic",
-                                data:results.data1,
+                                data:results.data.subdata[0],
                                 backgroundColor:"Blue",
                                 borderColor:"Blue",
                                 fill:false,
@@ -80,7 +81,7 @@ Papa.parse
                             },
                             {
                                 label:"Exponential",
-                                data:results.data2,
+                                data:results.data.subdata[1],
                                 backgroundColor:"Red",
                                 borderColor:"Red",
                                 fill:false,
