@@ -29,4 +29,40 @@ run;
 proc export data=_190226chartjs2 replace
     outfile='%SystemDrive%\Users\%USERNAME\Desktop\190226chartjs2.csv';
 run;
+filename cay_curr temp;
+proc http method="get" out=cay_curr
+    url='https://drive.google.com/uc?export=download&id=1upTaL-6iv-9BI8TI_qgKxyCMk1nkVX7L';
+run;
+data _190226chartjs3;
+    infile cay_curr dsd firstobs=3;
+	input x cpce a y cay;
+	x=int(x/100)+mod(x,100)/4;
+	drop cpce--y;
+	rename cay=y;
+run;
+proc export data=_190226chartjs3 replace
+    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190226chartjs3.csv';
+run;
+filename FF5F23Z1 "%sysfunc(getoption(WORK))\F-F_Research_Data_5_Factors_2x3_CSV.zip";
+filename FF5F23Z2 zip "%sysfunc(getoption(WORK))\F-F_Research_Data_5_Factors_2x3_CSV.zip";
+proc http method="get" out=FF5F23Z1
+    url="http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_CSV.zip";
+run;
+data _190226chartjs4(keep=x y1-y6);
+    infile FF5F23Z2(F-F_Research_Data_5_Factors_2x3.CSV) dsd firstobs=5;
+	input x Mkt_RF SMB HML RMW CMA RF;
+	if x then n+1;
+	if n=_n_;
+	x=int(x/100)+mod(x,100)/12;
+	array r(*) Mkt_RF--RF;
+	array l(*) l1-l6;
+	array y(*) y1-y6;
+	do i=1 to dim(r);
+        l(i)+log(1+r(i)/100);
+		y(i)=100*exp(l(i));
+	end;
+run;
+proc export data=_190226chartjs4 replace
+    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190226chartjs4.csv';
+run;
 quit;
