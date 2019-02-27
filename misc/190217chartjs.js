@@ -128,14 +128,14 @@ Papa.parse
                         [
                             {
                                 label:"call streaminit(1)",
-                                data:results.data1,
+                                data:results.data.subdata[0],
                                 backgroundColor:"Blue",
                                 borderColor:"Blue",
                                 fill:false
                             },
                             {
                                 label:"call streaminit(2)",
-                                data:results.data2,
+                                data:results.data.subdata[1],
                                 backgroundColor:"Red",
                                 borderColor:"Red",
                                 fill:false
@@ -400,7 +400,7 @@ Papa.parse
                         [
                             {
                                 label:"Mkt-RF",
-                                data:results.data1,
+                                data:results.data.subdata[0],
                                 backgroundColor:"Blue",
                                 borderColor:"Blue",
                                 fill:false,
@@ -409,7 +409,7 @@ Papa.parse
                                 pointRadius:0
                             },{
                                 label:"SMB",
-                                data:results.data2,
+                                data:results.data.subdata[1],
                                 backgroundColor:"Red",
                                 borderColor:"Red",
                                 fill:false,
@@ -418,7 +418,7 @@ Papa.parse
                                 pointRadius:0
                             },{
                                 label:"HML",
-                                data:results.data3,
+                                data:results.data.subdata[2],
                                 backgroundColor:"Lime",
                                 borderColor:"Lime",
                                 fill:false,
@@ -427,7 +427,7 @@ Papa.parse
                                 pointRadius:0
                             },{
                                 label:"RMW",
-                                data:results.data4,
+                                data:results.data.subdata[3],
                                 backgroundColor:"Fuchsia",
                                 borderColor:"Fuchsia",
                                 fill:false,
@@ -436,7 +436,7 @@ Papa.parse
                                 pointRadius:0
                             },{
                                 label:"CMA",
-                                data:results.data5,
+                                data:results.data.subdata[4],
                                 backgroundColor:"Aqua",
                                 borderColor:"Aqua",
                                 fill:false,
@@ -445,7 +445,7 @@ Papa.parse
                                 pointRadius:0
                             },{
                                 label:"RF",
-                                data:results.data6,
+                                data:results.data.subdata[5],
                                 backgroundColor:"Yellow",
                                 borderColor:"Yellow",
                                 fill:false,
