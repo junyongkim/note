@@ -257,7 +257,7 @@ Papa.parse
                         datasets:
                         [
                             {
-                                label:"Michigan",
+                                label:"ICS_ALL",
                                 data:results.data,
                                 borderColor:"Blue",
                                 backgroundColor:"Blue",
