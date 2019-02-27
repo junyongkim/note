@@ -42,7 +42,8 @@ Papa.parse
         }
     }
 );
-Papa.parse(
+Papa.parse
+(
     "/notebook/misc/190220chartjs2.csv",
     {
         download:true,
@@ -245,11 +246,7 @@ Papa.parse
         header:true,
         complete:function(results)
         {
-            results.data.splice
-            (
-                results.data.length-1,
-                results.data.length-1
-            );
+            results.data.splice(results.data.length-1,results.data.length-1);
             new Chart
             (
                 document.getElementById("Figure6"),
