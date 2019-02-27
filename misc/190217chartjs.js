@@ -271,7 +271,7 @@ Papa.parse
                             }
                         ]
                     },
-                options:
+                    options:
                     {
                         responsive:false
                     }
