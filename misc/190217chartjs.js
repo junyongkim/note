@@ -316,3 +316,42 @@ Papa.parse
         }
     }
 );
+Papa.parse
+(
+    "/notebook/misc/190226chartjs3.csv",
+    {
+        download:true,
+        header:true,
+        complete:function(results)
+        {
+            results.data.splice(results.data.length-1,results.data.length-1);
+            new Chart
+            (
+                document.getElementById("Figure8"),
+                {
+                    type:"scatter",
+                    data:
+                    {
+                        datasets:
+                        [
+                            {
+                                label:"cay",
+                                data:results.data,
+                                borderColor:"Blue",
+                                backgroundColor:"Blue",
+                                fill:false,
+                                showLine:true,
+                                lineTension:0,
+                                pointRadius:0
+                            }
+                        ]
+                    },
+                    options:
+                    {
+                        responsive:false
+                    }
+                }
+            );
+        }
+    }
+);
