@@ -296,7 +296,7 @@ Papa.parse
                         datasets:
                         [
                             {
-                                label:"ICS_ALL",
+                                label:"FEDFUNDS",
                                 data:results.data,
                                 borderColor:"Blue",
                                 backgroundColor:"Blue",
