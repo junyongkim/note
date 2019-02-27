@@ -401,7 +401,7 @@ Papa.parse
                         [
                             {
                                 label:"Mkt-RF",
-                                data:results.data,
+                                data:results.data1,
                                 borderColor:"Blue",
                                 backgroundColor:"Blue",
                                 fill:false,
@@ -410,7 +410,7 @@ Papa.parse
                                 pointRadius:0
                             },{
                                 label:"SMB",
-                                data:results.data,
+                                data:results.data2,
                                 borderColor:"Red",
                                 backgroundColor:"Red",
                                 fill:false,
@@ -419,7 +419,7 @@ Papa.parse
                                 pointRadius:0
                             },{
                                 label:"HML",
-                                data:results.data,
+                                data:results.data3,
                                 borderColor:"Lime",
                                 backgroundColor:"Lime",
                                 fill:false,
@@ -428,7 +428,7 @@ Papa.parse
                                 pointRadius:0
                             },{
                                 label:"RMW",
-                                data:results.data,
+                                data:results.data4,
                                 borderColor:"Fuchsia",
                                 backgroundColor:"Fuchsia",
                                 fill:false,
@@ -437,7 +437,7 @@ Papa.parse
                                 pointRadius:0
                             },{
                                 label:"CMA",
-                                data:results.data,
+                                data:results.data5,
                                 borderColor:"Aqua",
                                 backgroundColor:"Aqua",
                                 fill:false,
@@ -446,7 +446,7 @@ Papa.parse
                                 pointRadius:0
                             },{
                                 label:"RF",
-                                data:results.data,
+                                data:results.data6,
                                 borderColor:"Yellow",
                                 backgroundColor:"Yellow",
                                 fill:false,
