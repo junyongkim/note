@@ -20,15 +20,15 @@ Papa.parse
                             {
                                 label:"Quadratic",
                                 data:results.data[1],
-                                borderColor:"Blue",
                                 backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 fill:false
                             },
                             {
                                 label:"Exponential",
                                 data:results.data[2],
-                                borderColor:"Red",
                                 backgroundColor:"Red",
+                                borderColor:"Red",
                                 fill:false
                             }
                         ]
@@ -73,16 +73,16 @@ Papa.parse
                             {
                                 label:"Quadratic",
                                 data:results.data1,
-                                borderColor:"Blue",
                                 backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 fill:false,
                                 showLine:true
                             },
                             {
                                 label:"Exponential",
                                 data:results.data2,
-                                borderColor:"Red",
                                 backgroundColor:"Red",
+                                borderColor:"Red",
                                 fill:false,
                                 showLine:true
                             }
@@ -128,15 +128,15 @@ Papa.parse
                             {
                                 label:"call streaminit(1)",
                                 data:results.data1,
-                                borderColor:"Blue",
                                 backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 fill:false
                             },
                             {
                                 label:"call streaminit(2)",
                                 data:results.data2,
-                                borderColor:"Red",
                                 backgroundColor:"Red",
+                                borderColor:"Red",
                                 fill:false
                             }
                         ]
@@ -170,16 +170,16 @@ Papa.parse
                             {
                                 label:"call streaminit(1)",
                                 data:results.data[1],
-                                borderColor:"Blue",
                                 backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 fill:false
                             },
                             {
                                 type:"line",
                                 label:'rand("normal",0,1)',
                                 data:results.data[2],
-                                borderColor:"Red",
                                 backgroundColor:"Red",
+                                borderColor:"Red",
                                 fill:false,
                                 pointRadius:0
                             }
@@ -215,15 +215,15 @@ Papa.parse
                             {
                                 label:"call streaminit(1)",
                                 data:results.data[1],
-                                borderColor:"Blue",
                                 backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 fill:false
                             },
                             {
                                 label:"call streaminit(2)",
                                 data:results.data[2],
-                                borderColor:"Red",
                                 backgroundColor:"Red",
+                                borderColor:"Red",
                                 fill:false
                             }
                         ]
@@ -259,8 +259,8 @@ Papa.parse
                             {
                                 label:"ICS_ALL",
                                 data:results.data,
-                                borderColor:"Blue",
                                 backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -298,8 +298,8 @@ Papa.parse
                             {
                                 label:"FEDFUNDS",
                                 data:results.data,
-                                borderColor:"Blue",
                                 backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -337,8 +337,8 @@ Papa.parse
                             {
                                 label:"cay",
                                 data:results.data,
-                                borderColor:"Blue",
                                 backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -402,8 +402,8 @@ Papa.parse
                             {
                                 label:"Mkt-RF",
                                 data:results.data1,
-                                borderColor:"Blue",
                                 backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -411,8 +411,8 @@ Papa.parse
                             },{
                                 label:"SMB",
                                 data:results.data2,
-                                borderColor:"Red",
                                 backgroundColor:"Red",
+                                borderColor:"Red",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -420,8 +420,8 @@ Papa.parse
                             },{
                                 label:"HML",
                                 data:results.data3,
-                                borderColor:"Lime",
                                 backgroundColor:"Lime",
+                                borderColor:"Lime",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -429,8 +429,8 @@ Papa.parse
                             },{
                                 label:"RMW",
                                 data:results.data4,
-                                borderColor:"Fuchsia",
                                 backgroundColor:"Fuchsia",
+                                borderColor:"Fuchsia",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -438,8 +438,8 @@ Papa.parse
                             },{
                                 label:"CMA",
                                 data:results.data5,
-                                borderColor:"Aqua",
                                 backgroundColor:"Aqua",
+                                borderColor:"Aqua",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -447,8 +447,8 @@ Papa.parse
                             },{
                                 label:"RF",
                                 data:results.data6,
-                                borderColor:"Yellow",
                                 backgroundColor:"Yellow",
+                                borderColor:"Yellow",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
