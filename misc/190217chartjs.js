@@ -240,7 +240,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/notebook/misc/190226chartjs.csv",
+    "/notebook/misc/190226chartjs1.csv",
     {
         download:true,
         header:true,
@@ -250,6 +250,45 @@ Papa.parse
             new Chart
             (
                 document.getElementById("Figure6"),
+                {
+                    type:"scatter",
+                    data:
+                    {
+                        datasets:
+                        [
+                            {
+                                label:"ICS_ALL",
+                                data:results.data,
+                                borderColor:"Blue",
+                                backgroundColor:"Blue",
+                                fill:false,
+                                showLine:true,
+                                lineTension:0,
+                                pointRadius:0
+                            }
+                        ]
+                    },
+                    options:
+                    {
+                        responsive:false
+                    }
+                }
+            );
+        }
+    }
+);
+Papa.parse
+(
+    "/notebook/misc/190226chartjs2.csv",
+    {
+        download:true,
+        header:true,
+        complete:function(results)
+        {
+            results.data.splice(results.data.length-1,results.data.length-1);
+            new Chart
+            (
+                document.getElementById("Figure7"),
                 {
                     type:"scatter",
                     data:
