@@ -584,3 +584,83 @@ Papa.parse
         }
     }
 );
+Papa.parse
+(
+    "/notebook/misc/190227chartjs3.csv",
+    {
+        download:true,
+        header:true,
+        complete:function(results)
+        {
+            results.data.splice(results.data.length-1,results.data.length-1);
+            new Chart
+            (
+                document.getElementById("Figure12"),
+                {
+                    type:"scatter",
+                    data:
+                    {
+                        datasets:
+                        [
+                            {
+                                label:"CAPE",
+                                data:results.data,
+                                backgroundColor:"Black",
+                                borderColor:"Black",
+                                borderWidth:1,
+                                fill:false,
+                                showLine:true,
+                                lineTension:0,
+                                pointRadius:0
+                            }
+                        ]
+                    },
+                    options:
+                    {
+                        responsive:false
+                    }
+                }
+            );
+        }
+    }
+);
+Papa.parse
+(
+    "/notebook/misc/190227chartjs4.csv",
+    {
+        download:true,
+        header:true,
+        complete:function(results)
+        {
+            results.data.splice(results.data.length-1,results.data.length-1);
+            new Chart
+            (
+                document.getElementById("Figure13"),
+                {
+                    type:"scatter",
+                    data:
+                    {
+                        datasets:
+                        [
+                            {
+                                label:"BAB",
+                                data:results.data,
+                                backgroundColor:"Black",
+                                borderColor:"Black",
+                                borderWidth:1,
+                                fill:false,
+                                showLine:true,
+                                lineTension:0,
+                                pointRadius:0
+                            }
+                        ]
+                    },
+                    options:
+                    {
+                        responsive:false
+                    }
+                }
+            );
+        }
+    }
+);
