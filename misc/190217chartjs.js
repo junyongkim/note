@@ -439,8 +439,8 @@ Papa.parse
                             },{
                                 label:"RMW",
                                 data:results.data.subdata[3],
-                                backgroundColor:"Fuchsia",
-                                borderColor:"Fuchsia",
+                                backgroundColor:"Black",
+                                borderColor:"Black",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -449,8 +449,8 @@ Papa.parse
                             },{
                                 label:"CMA",
                                 data:results.data.subdata[4],
-                                backgroundColor:"Aqua",
-                                borderColor:"Aqua",
+                                backgroundColor:"Fuchsia",
+                                borderColor:"Fuchsia",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -459,8 +459,8 @@ Papa.parse
                             },{
                                 label:"RF",
                                 data:results.data.subdata[5],
-                                backgroundColor:"Yellow",
-                                borderColor:"Yellow",
+                                backgroundColor:"Aqua",
+                                borderColor:"Aqua",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
