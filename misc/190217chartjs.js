@@ -198,7 +198,7 @@ Papa.parse
                     options:
                     {
                         responsive:false,
-                        xAxes:[{barPercentage:1,categoryPercentage:1}],
+                        xAxes:[{categoryPercentage:1,barPercentage:1}],
                         yAxes:[{ticks:{beginAtZero:true}}]
                     }
                 }
@@ -246,7 +246,7 @@ Papa.parse
                     {
                         responsive:false,
                         xAxes:[{ticks:{beginAtZero:true}}],
-                        yAxes:[{barPercentage:1,categoryPercentage:1}]
+                        yAxes:[{categoryPercentage:1,barPercentage:1}]
                     }
                 }
             );
