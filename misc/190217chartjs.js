@@ -135,6 +135,7 @@ Papa.parse
                                 data:results.data.subdata[0],
                                 backgroundColor:"transparent",
                                 borderColor:"blue",
+                                borderWidth:1,
                                 fill:false
                             },
                             {
@@ -142,6 +143,7 @@ Papa.parse
                                 data:results.data.subdata[1],
                                 backgroundColor:"transparent",
                                 borderColor:"red",
+                                borderWidth:1,
                                 fill:false
                             }
                         ]
@@ -178,6 +180,7 @@ Papa.parse
                                 data:results.data[1],
                                 backgroundColor:"transparent",
                                 borderColor:"blue",
+                                borderWidth:1,
                                 fill:false
                             },
                             {
@@ -226,6 +229,7 @@ Papa.parse
                                 data:results.data[1],
                                 backgroundColor:"transparent",
                                 borderColor:"blue",
+                                borderWidth:1,
                                 fill:false
                             },
                             {
@@ -233,6 +237,7 @@ Papa.parse
                                 data:results.data[2],
                                 backgroundColor:"transparent",
                                 borderColor:"red",
+                                borderWidth:1,
                                 fill:false
                             }
                         ]
