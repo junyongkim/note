@@ -10,7 +10,7 @@ Papa.parse
             results.data.splice(results.data.length-1,results.data.length-1);
             new Chart
             (
-                document.getElementById("Figure1"),
+                document.getElementById("Figure01"),
                 {
                     type:"line",
                     data:
@@ -64,7 +64,7 @@ Papa.parse
             }
             new Chart
             (
-                document.getElementById("Figure2"),
+                document.getElementById("Figure02"),
                 {
                     type:"scatter",
                     data:
@@ -119,7 +119,7 @@ Papa.parse
             }
             new Chart
             (
-                document.getElementById("Figure3"),
+                document.getElementById("Figure03"),
                 {
                     type:"scatter",
                     data:
@@ -161,7 +161,7 @@ Papa.parse
             results.data.splice(results.data.length-1,results.data.length-1);
             new Chart
             (
-                document.getElementById("Figure4"),
+                document.getElementById("Figure04"),
                 {
                     type:"bar",
                     data:
@@ -207,7 +207,7 @@ Papa.parse
             results.data.splice(results.data.length-1,results.data.length-1);
             new Chart
             (
-                document.getElementById("Figure5"),
+                document.getElementById("Figure05"),
                 {
                     type:"horizontalBar",
                     data:
@@ -252,7 +252,7 @@ Papa.parse
             results.data.splice(results.data.length-1,results.data.length-1);
             new Chart
             (
-                document.getElementById("Figure6"),
+                document.getElementById("Figure06"),
                 {
                     type:"scatter",
                     data:
@@ -291,7 +291,7 @@ Papa.parse
             results.data.splice(results.data.length-1,results.data.length-1);
             new Chart
             (
-                document.getElementById("Figure7"),
+                document.getElementById("Figure07"),
                 {
                     type:"scatter",
                     data:
@@ -330,7 +330,7 @@ Papa.parse
             results.data.splice(results.data.length-1,results.data.length-1);
             new Chart
             (
-                document.getElementById("Figure8"),
+                document.getElementById("Figure08"),
                 {
                     type:"scatter",
                     data:
@@ -391,7 +391,7 @@ Papa.parse
             }
             new Chart
             (
-                document.getElementById("Figure9"),
+                document.getElementById("Figure09"),
                 {
                     type:"scatter",
                     data:
@@ -448,6 +448,45 @@ Papa.parse
                                 data:results.data.subdata[5],
                                 backgroundColor:"Yellow",
                                 borderColor:"Yellow",
+                                fill:false,
+                                showLine:true,
+                                lineTension:0,
+                                pointRadius:0
+                            }
+                        ]
+                    },
+                    options:
+                    {
+                        responsive:false
+                    }
+                }
+            );
+        }
+    }
+);
+Papa.parse
+(
+    "/notebook/misc/190227chartjs1.csv",
+    {
+        download:true,
+        header:true,
+        complete:function(results)
+        {
+            results.data.splice(results.data.length-1,results.data.length-1);
+            new Chart
+            (
+                document.getElementById("Figure10"),
+                {
+                    type:"scatter",
+                    data:
+                    {
+                        datasets:
+                        [
+                            {
+                                label:"AggLiq",
+                                data:results.data,
+                                backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
