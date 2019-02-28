@@ -439,16 +439,6 @@ Papa.parse
                             },{
                                 label:"RMW",
                                 data:results.data.subdata[3],
-                                backgroundColor:"Black",
-                                borderColor:"Black",
-                                borderWidth:1,
-                                fill:false,
-                                showLine:true,
-                                lineTension:0,
-                                pointRadius:0
-                            },{
-                                label:"CMA",
-                                data:results.data.subdata[4],
                                 backgroundColor:"Fuchsia",
                                 borderColor:"Fuchsia",
                                 borderWidth:1,
@@ -457,10 +447,20 @@ Papa.parse
                                 lineTension:0,
                                 pointRadius:0
                             },{
-                                label:"RF",
-                                data:results.data.subdata[5],
+                                label:"CMA",
+                                data:results.data.subdata[4],
                                 backgroundColor:"Aqua",
                                 borderColor:"Aqua",
+                                borderWidth:1,
+                                fill:false,
+                                showLine:true,
+                                lineTension:0,
+                                pointRadius:0
+                            },{
+                                label:"RF",
+                                data:results.data.subdata[5],
+                                backgroundColor:"Yellow",
+                                borderColor:"Yellow",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
