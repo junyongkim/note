@@ -487,6 +487,7 @@ Papa.parse
                                 data:results.data,
                                 backgroundColor:"Blue",
                                 borderColor:"Blue",
+                                borderWidth:11,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
