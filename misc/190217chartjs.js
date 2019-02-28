@@ -499,7 +499,7 @@ Papa.parse
                             {
                                 label:"AggLiq",
                                 data:results.data,
-                                backgroundColor:"blue",
+                                backgroundColor:"transparent",
                                 borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
@@ -555,7 +555,7 @@ Papa.parse
                             {
                                 label:"Mean first-day return",
                                 data:results.data.subdata[0],
-                                backgroundColor:"blue",
+                                backgroundColor:"transparent",
                                 borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
@@ -565,7 +565,7 @@ Papa.parse
                             },{
                                 label:"Number of IPOs",
                                 data:results.data.subdata[1],
-                                backgroundColor:"red",
+                                backgroundColor:"transparent",
                                 borderColor:"red",
                                 borderWidth:1,
                                 fill:false,
@@ -605,7 +605,7 @@ Papa.parse
                             {
                                 label:"CAPE",
                                 data:results.data,
-                                backgroundColor:"blue",
+                                backgroundColor:"transparent",
                                 borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
@@ -645,7 +645,7 @@ Papa.parse
                             {
                                 label:"BAB",
                                 data:results.data,
-                                backgroundColor:"blue",
+                                backgroundColor:"transparent",
                                 borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
