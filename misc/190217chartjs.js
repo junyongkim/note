@@ -503,3 +503,85 @@ Papa.parse
         }
     }
 );
+Papa.parse
+(
+    "/notebook/misc/190227chartjs2.csv",
+    {
+        download:true,
+        header:true,
+        complete:function(results)
+        {
+            results.data.splice(results.data.length-1,results.data.length-1);
+            results.data.subdata=[[],[],[],[]];
+            for(i=0;i<results.data.length-1;i++)
+            {
+                results.data.subdata[0][i]={};
+                results.data.subdata[0][i].x=results.data[i].x;
+                results.data.subdata[0][i].y=results.data[i].y1;
+                results.data.subdata[1][i]={};
+                results.data.subdata[1][i].x=results.data[i].x;
+                results.data.subdata[1][i].y=results.data[i].y2;
+                results.data.subdata[2][i]={};
+                results.data.subdata[2][i].x=results.data[i].x;
+                results.data.subdata[2][i].y=results.data[i].y3;
+                results.data.subdata[3][i]={};
+                results.data.subdata[3][i].x=results.data[i].x;
+                results.data.subdata[3][i].y=results.data[i].y4;
+            }
+            new Chart
+            (
+                document.getElementById("Figure11"),
+                {
+                    type:"scatter",
+                    data:
+                    {
+                        datasets:
+                        [
+                            {
+                                label:'Average first-day % return',
+                                data:results.data.subdata[0],
+                                backgroundColor:"Blue",
+                                borderColor:"Blue",
+                                fill:false,
+                                showLine:true,
+                                lineTension:0,
+                                pointRadius:0
+                            },{
+                                label:"Gross volume",
+                                data:results.data.subdata[1],
+                                backgroundColor:"Red",
+                                borderColor:"Red",
+                                fill:false,
+                                showLine:true,
+                                lineTension:0,
+                                pointRadius:0
+                            },{
+                                label:"Net volume",
+                                data:results.data.subdata[2],
+                                backgroundColor:"Lime",
+                                borderColor:"Lime",
+                                fill:false,
+                                showLine:true,
+                                lineTension:0,
+                                pointRadius:0
+                            },{
+                                label:"Percentage of IPOs",
+                                data:results.data.subdata[3],
+                                backgroundColor:"Fuchsia",
+                                borderColor:"Fuchsia",
+                                fill:false,
+                                showLine:true,
+                                lineTension:0,
+                                pointRadius:0
+                            }
+                        ]
+                    },
+                    options:
+                    {
+                        responsive:false
+                    }
+                }
+            );
+        }
+    }
+);
