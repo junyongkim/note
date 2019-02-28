@@ -21,16 +21,16 @@ Papa.parse
                             {
                                 label:"Quadratic",
                                 data:results.data[1],
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 borderWidth:1,
                                 fill:false
                             },
                             {
                                 label:"Exponential",
                                 data:results.data[2],
-                                backgroundColor:"Red",
-                                borderColor:"Red",
+                                backgroundColor:"red",
+                                borderColor:"red",
                                 borderWidth:1,
                                 fill:false
                             }
@@ -76,8 +76,8 @@ Papa.parse
                             {
                                 label:"Quadratic",
                                 data:results.data.subdata[0],
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true
@@ -85,8 +85,8 @@ Papa.parse
                             {
                                 label:"Exponential",
                                 data:results.data.subdata[1],
-                                backgroundColor:"Red",
-                                borderColor:"Red",
+                                backgroundColor:"red",
+                                borderColor:"red",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true
@@ -133,15 +133,15 @@ Papa.parse
                             {
                                 label:"call streaminit(1)",
                                 data:results.data.subdata[0],
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 fill:false
                             },
                             {
                                 label:"call streaminit(2)",
                                 data:results.data.subdata[1],
-                                backgroundColor:"Red",
-                                borderColor:"Red",
+                                backgroundColor:"red",
+                                borderColor:"red",
                                 fill:false
                             }
                         ]
@@ -176,16 +176,16 @@ Papa.parse
                             {
                                 label:"call streaminit(1)",
                                 data:results.data[1],
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 fill:false
                             },
                             {
                                 type:"line",
                                 label:'rand("normal",0,1)',
                                 data:results.data[2],
-                                backgroundColor:"Red",
-                                borderColor:"Red",
+                                backgroundColor:"red",
+                                borderColor:"red",
                                 borderWidth:1,
                                 fill:false,
                                 pointRadius:0
@@ -223,15 +223,15 @@ Papa.parse
                             {
                                 label:"call streaminit(1)",
                                 data:results.data[1],
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 fill:false
                             },
                             {
                                 label:"call streaminit(2)",
                                 data:results.data[2],
-                                backgroundColor:"Red",
-                                borderColor:"Red",
+                                backgroundColor:"red",
+                                borderColor:"red",
                                 fill:false
                             }
                         ]
@@ -267,8 +267,8 @@ Papa.parse
                             {
                                 label:"ICS_ALL",
                                 data:results.data,
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -307,8 +307,8 @@ Papa.parse
                             {
                                 label:"FEDFUNDS",
                                 data:results.data,
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -347,8 +347,8 @@ Papa.parse
                             {
                                 label:"cay",
                                 data:results.data,
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -409,8 +409,8 @@ Papa.parse
                             {
                                 label:"Mkt-RF",
                                 data:results.data.subdata[0],
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -419,8 +419,8 @@ Papa.parse
                             },{
                                 label:"SMB",
                                 data:results.data.subdata[1],
-                                backgroundColor:"Red",
-                                borderColor:"Red",
+                                backgroundColor:"red",
+                                borderColor:"red",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -429,8 +429,8 @@ Papa.parse
                             },{
                                 label:"HML",
                                 data:results.data.subdata[2],
-                                backgroundColor:"Lime",
-                                borderColor:"Lime",
+                                backgroundColor:"lime",
+                                borderColor:"lime",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -439,8 +439,8 @@ Papa.parse
                             },{
                                 label:"RMW",
                                 data:results.data.subdata[3],
-                                backgroundColor:"Fuchsia",
-                                borderColor:"Fuchsia",
+                                backgroundColor:"fuchsia",
+                                borderColor:"fuchsia",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -449,8 +449,8 @@ Papa.parse
                             },{
                                 label:"CMA",
                                 data:results.data.subdata[4],
-                                backgroundColor:"Aqua",
-                                borderColor:"Aqua",
+                                backgroundColor:"aqua",
+                                borderColor:"aqua",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -459,8 +459,8 @@ Papa.parse
                             },{
                                 label:"RF",
                                 data:results.data.subdata[5],
-                                backgroundColor:"Yellow",
-                                borderColor:"Yellow",
+                                backgroundColor:"yellow",
+                                borderColor:"yellow",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -499,8 +499,8 @@ Papa.parse
                             {
                                 label:"AggLiq",
                                 data:results.data,
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -555,8 +555,8 @@ Papa.parse
                             {
                                 label:"Mean first-day return",
                                 data:results.data.subdata[0],
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -565,8 +565,8 @@ Papa.parse
                             },{
                                 label:"Number of IPOs",
                                 data:results.data.subdata[1],
-                                backgroundColor:"Red",
-                                borderColor:"Red",
+                                backgroundColor:"red",
+                                borderColor:"red",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -605,8 +605,8 @@ Papa.parse
                             {
                                 label:"CAPE",
                                 data:results.data,
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -645,8 +645,8 @@ Papa.parse
                             {
                                 label:"BAB",
                                 data:results.data,
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"blue",
+                                borderColor:"blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
