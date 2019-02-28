@@ -1,5 +1,8 @@
+dm "log;clear;output;clear;";
 resetline;
 option nodate nonumber ls=128 ps=max;
+proc datasets lib=work kill nolist;
+run;
 filename tbmics temp;
 proc http method="get" out=tbmics
     url="http://www.sca.isr.umich.edu/files/tbmics.csv";
@@ -99,5 +102,41 @@ data _190227chartjs2(keep=x y1-y4);
 run;
 proc export data=_190227chartjs2 replace
     outfile='%SystemDrive%\Users\%USERNAME\Desktop\190227chartjs2.csv';
+run;
+filename ie_data "%sysfunc(getoption(WORK))\ie_data.xlsx";
+proc http method="get" out=ie_data
+    url="http://www.econ.yale.edu/~shiller/data/ie_data.xls";
+run;
+proc import datafile=ie_data dbms=excel out=_190227chartjs3 replace;
+    sheet="Data";
+    getnames=no;
+run;
+data _190227chartjs3(keep=x y);
+    set _190227chartjs3;
+    x=int(F1)+mod(100*F1,100)/12;
+    y=input(F11,8.2);
+    if y;
+run;
+proc export data=_190227chartjs3 replace
+    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190227chartjs3.csv';
+run;
+filename Betting "%sysfunc(getoption(WORK))\Betting-Against-Beta-Equity-Factors-Monthly.xlsx";
+proc http method="get" out=Betting
+    url="https://images.aqr.com/-/media/AQR/Documents/Insights/Data-Sets/Betting-Against-Beta-Equity-Factors-Monthly.xlsx";
+run;
+proc import datafile=Betting dbms=excel out=_190227chartjs4 replace;
+    sheet="BAB Factors";
+    getnames=no;
+run;
+data _190227chartjs4(keep=x y);
+    set _190227chartjs4;
+    x=input(F1,mmddyy10.);
+    x=year(x)+month(x)/12;
+    if x;
+    l+log(1+input(F25,percent8.2));
+    y=100*exp(l);
+run;
+proc export data=_190227chartjs4 replace
+    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190227chartjs4.csv';
 run;
 quit;
