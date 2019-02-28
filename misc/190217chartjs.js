@@ -198,8 +198,11 @@ Papa.parse
                     options:
                     {
                         responsive:false,
-                        xAxes:[{categoryPercentage:1,barPercentage:1}],
-                        yAxes:[{ticks:{beginAtZero:true}}]
+                        scales:
+                        {
+                            xAxes:[{barPercentage:1,categoryPercentage:1}],
+                            yAxes:[{ticks:{beginAtZero:true}}]
+                        }
                     }
                 }
             );
@@ -245,8 +248,11 @@ Papa.parse
                     options:
                     {
                         responsive:false,
-                        xAxes:[{ticks:{beginAtZero:true}}],
-                        yAxes:[{categoryPercentage:1,barPercentage:1}]
+                        scales:
+                        {
+                            xAxes:[{ticks:{beginAtZero:true}}],
+                            yAxes:[{barPercentage:1,categoryPercentage:1}]
+                        }
                     }
                 }
             );
