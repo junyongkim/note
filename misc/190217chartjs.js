@@ -540,8 +540,8 @@ Papa.parse
                             {
                                 label:"Mean first-day return",
                                 data:results.data.subdata[0],
-                                backgroundColor:"Blue",
-                                borderColor:"Blue",
+                                backgroundColor:"Red",
+                                borderColor:"Red",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -549,8 +549,8 @@ Papa.parse
                             },{
                                 label:"Number of IPOs",
                                 data:results.data.subdata[1],
-                                backgroundColor:"Red",
-                                borderColor:"Red",
+                                backgroundColor:"Lime",
+                                borderColor:"Lime",
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
