@@ -132,7 +132,7 @@ data _190227chartjs4(keep=x y);
     set _190227chartjs4;
     x=input(F1,mmddyy10.);
     x=year(x)+month(x)/12;
-    if x;
+    if x>1963.5;
     l+log(1+input(F25,percent8.2));
     y=100*exp(l);
 run;
