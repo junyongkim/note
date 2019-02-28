@@ -23,6 +23,7 @@ Papa.parse
                                 data:results.data[1],
                                 backgroundColor:"Blue",
                                 borderColor:"Blue",
+                                borderWidth:1,
                                 fill:false
                             },
                             {
@@ -30,6 +31,7 @@ Papa.parse
                                 data:results.data[2],
                                 backgroundColor:"Red",
                                 borderColor:"Red",
+                                borderWidth:1,
                                 fill:false
                             }
                         ]
@@ -76,6 +78,7 @@ Papa.parse
                                 data:results.data.subdata[0],
                                 backgroundColor:"Blue",
                                 borderColor:"Blue",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true
                             },
@@ -84,6 +87,7 @@ Papa.parse
                                 data:results.data.subdata[1],
                                 backgroundColor:"Red",
                                 borderColor:"Red",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true
                             }
@@ -182,6 +186,7 @@ Papa.parse
                                 data:results.data[2],
                                 backgroundColor:"Red",
                                 borderColor:"Red",
+                                borderWidth:1,
                                 fill:false,
                                 pointRadius:0
                             }
@@ -264,6 +269,7 @@ Papa.parse
                                 data:results.data,
                                 backgroundColor:"Blue",
                                 borderColor:"Blue",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -301,8 +307,9 @@ Papa.parse
                             {
                                 label:"FEDFUNDS",
                                 data:results.data,
-                                backgroundColor:"Red",
-                                borderColor:"Red",
+                                backgroundColor:"Blue",
+                                borderColor:"Blue",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -340,8 +347,9 @@ Papa.parse
                             {
                                 label:"cay",
                                 data:results.data,
-                                backgroundColor:"Lime",
-                                borderColor:"Lime",
+                                backgroundColor:"Blue",
+                                borderColor:"Blue",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -403,6 +411,7 @@ Papa.parse
                                 data:results.data.subdata[0],
                                 backgroundColor:"Blue",
                                 borderColor:"Blue",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -412,6 +421,7 @@ Papa.parse
                                 data:results.data.subdata[1],
                                 backgroundColor:"Red",
                                 borderColor:"Red",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -421,6 +431,7 @@ Papa.parse
                                 data:results.data.subdata[2],
                                 backgroundColor:"Lime",
                                 borderColor:"Lime",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -430,6 +441,7 @@ Papa.parse
                                 data:results.data.subdata[3],
                                 backgroundColor:"Fuchsia",
                                 borderColor:"Fuchsia",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -439,6 +451,7 @@ Papa.parse
                                 data:results.data.subdata[4],
                                 backgroundColor:"Aqua",
                                 borderColor:"Aqua",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -448,6 +461,7 @@ Papa.parse
                                 data:results.data.subdata[5],
                                 backgroundColor:"Yellow",
                                 borderColor:"Yellow",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -541,8 +555,9 @@ Papa.parse
                             {
                                 label:"Mean first-day return",
                                 data:results.data.subdata[0],
-                                backgroundColor:"Red",
-                                borderColor:"Red",
+                                backgroundColor:"Blue",
+                                borderColor:"Blue",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
@@ -550,8 +565,9 @@ Papa.parse
                             },{
                                 label:"Number of IPOs",
                                 data:results.data.subdata[1],
-                                backgroundColor:"Lime",
-                                borderColor:"Lime",
+                                backgroundColor:"Red",
+                                borderColor:"Red",
+                                borderWidth:1,
                                 fill:false,
                                 showLine:true,
                                 lineTension:0,
