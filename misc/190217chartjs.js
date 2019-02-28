@@ -538,7 +538,7 @@ Papa.parse
                         datasets:
                         [
                             {
-                                label:'Average first-day % return',
+                                label:"Mean first-day return",
                                 data:results.data.subdata[0],
                                 backgroundColor:"Blue",
                                 borderColor:"Blue",
@@ -547,7 +547,7 @@ Papa.parse
                                 lineTension:0,
                                 pointRadius:0
                             },{
-                                label:"Gross volume",
+                                label:"Number of IPOs",
                                 data:results.data.subdata[1],
                                 backgroundColor:"Red",
                                 borderColor:"Red",
