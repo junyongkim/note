@@ -605,8 +605,8 @@ Papa.parse
                             {
                                 label:"CAPE",
                                 data:results.data,
-                                backgroundColor:"Black",
-                                borderColor:"Black",
+                                backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
@@ -645,8 +645,8 @@ Papa.parse
                             {
                                 label:"BAB",
                                 data:results.data,
-                                backgroundColor:"Black",
-                                borderColor:"Black",
+                                backgroundColor:"Blue",
+                                borderColor:"Blue",
                                 borderWidth:1,
                                 fill:false,
                                 showLine:true,
