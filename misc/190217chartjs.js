@@ -555,24 +555,6 @@ Papa.parse
                                 showLine:true,
                                 lineTension:0,
                                 pointRadius:0
-                            },{
-                                label:"Net volume",
-                                data:results.data.subdata[2],
-                                backgroundColor:"Lime",
-                                borderColor:"Lime",
-                                fill:false,
-                                showLine:true,
-                                lineTension:0,
-                                pointRadius:0
-                            },{
-                                label:"Percentage of IPOs",
-                                data:results.data.subdata[3],
-                                backgroundColor:"Fuchsia",
-                                borderColor:"Fuchsia",
-                                fill:false,
-                                showLine:true,
-                                lineTension:0,
-                                pointRadius:0
                             }
                         ]
                     },
