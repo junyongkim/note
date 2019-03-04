@@ -12,6 +12,12 @@ span{font-family:"LM Sans 10",Calibri}
 <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.3/papaparse.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/command-line/prism-command-line.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-sas.min.js></script>
+<link href=https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css rel=stylesheet>
+<link href=https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/command-line/prism-command-line.min.css rel=stylesheet>
+<link href=https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-coy.min.css rel=stylesheet>
 <meta name=viewport content=width=1024px>
 </head>
 <body>
@@ -26,6 +32,18 @@ span{font-family:"LM Sans 10",Calibri}
 <h2 style="text-align:center">A Note on Chart.js</h2>
 <h3 style="text-align:center"><span style="font-weight:normal">JY Kim</span></h3>
 <h3 style="text-align:center"><span style="font-weight:normal">February 17th, 2019</span></h3>
+<h2>March 2019</h2>
+<h3>4th</h3>
+<p>This is not about Chart.js, but I added Prism here as follows.</p>
+<pre class=line-numbers><code class=lang-sas>resetline;
+dm "log;clear;output;clear;";
+option nodate nonumber ls=128 ps=max;
+
+proc datasets lib=work nolist kill;
+run;
+
+quit;</code></pre>
+<p>Both three js files and three css ones are required.</p>
 <h2>February 2019</h2>
 <h3>27th</h3>
 <p>I added the following data.</p>
