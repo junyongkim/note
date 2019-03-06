@@ -5,7 +5,7 @@
 @font-face{font-family:"LM Sans 10";src:url(/notebook/font/lmsans10-regular.otf)}
 @font-face{font-family:"LM Sans 10";src:url(/notebook/font/lmsans10-bold.otf);font-weight:bold}
 @font-face{font-family:"LM Mono 10";src:url(/notebook/font/lmmono10-regular.otf)}
-body{text-size-adjust:100%;font-family:"LM Sans 10",Calibri}
+body{text-size-adjust:100%;font-family:"LM Sans 10",Calibri;font-size:11pt}
 a{text-size-adjust:100%;font-family:"LM Mono 10",Consolas;color:blue}
 span.a{font-family:"LM Sans 10",Calibri}
 code{font-family:"LM Mono 10",Consolas!important}
@@ -30,11 +30,11 @@ code{font-family:"LM Mono 10",Consolas!important}
 </div>
 <div style="width:100%;height:calc(100% - 23px);position:fixed;top:23px;left:0;overflow:auto">
 <div style="width:1024px;margin:auto;text-align:justify">
-<h2 style="text-align:center">A Note on Chart.js</h2>
-<h3 style="text-align:center"><span style="font-weight:normal">JY Kim</span></h3>
-<h3 style="text-align:center"><span style="font-weight:normal">February 17th, 2019</span></h3>
-<h2>March 2019</h2>
-<h3>4th</h3>
+<h1 style="text-align:center">A Note on Chart.js</h1>
+<h2 style="text-align:center"><span style="font-weight:normal">JY Kim</span></h2>
+<h2 style="text-align:center"><span style="font-weight:normal">February 17th, 2019</span></h2>
+<h1>March 2019</h1>
+<h2>4th</h2>
 <p>This is not about Chart.js, but I added Prism here as follows.</p>
 <pre class=line-numbers><code class=lang-sas>resetline;
 dm "log;clear;output;clear;";
@@ -45,8 +45,8 @@ run;
 
 quit;</code></pre>
 <p>Both three js files and three css ones are required.</p>
-<h2>February 2019</h2>
-<h3>27th</h3>
+<h1>February 2019</h1>
+<h2>27th</h2>
 <p>I added the following data.</p>
 <ol>
 <li>The Pastor&ndash;Stambaugh liquidity (AggLiq) from <a href=http://finance.wharton.upenn.edu/~stambaug/ target=_blank><span class=a>Robert F. Stambaugh</span></a> (monthly)</li>
@@ -56,7 +56,7 @@ quit;</code></pre>
 </ol>
 <p style="text-align:center"><canvas id=Figure10 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure11 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure12 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure13 width=512px height=384px style="display:inline-block"></canvas></p>
 <p>It's hard for SAS to update some data. For example, the filename of the uncertainty data from <a href=https://www.sydneyludvigson.com/ target=_blank><span class=a>Sydney C. Ludvigson</span></a> is often revised manually. The stock market confidence indices from <a href=https://som.yale.edu/ target=_blank><span class=a>Yale School of Management</span></a> are also unfriendly as they use a blob address.</p>
-<h3>26th</h3>
+<h2>26th</h2>
 <p>First, <a href=https://github.com/junyongkim/notebook/blob/gh-pages/misc/190226chartjs.sas target=_blank><span class=a>this SAS code</span></a> downloads the following data.</p>
 <ol>
 <li>Index of Consumer Sentiment (ICS_ALL) from <a href=http://www.sca.isr.umich.edu/ target=_blank><span class=a>Surveys of Consumers</span></a> (monthly)</li>
@@ -66,19 +66,19 @@ quit;</code></pre>
 </ol>
 <p style="text-align:center"><canvas id=Figure06 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure07 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure08 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure09 width=512px height=384px style="display:inline-block"></canvas></p>
 <p>Second, I reindented the JavaScript code.</p>
-<h3>22nd</h3>
+<h2>22nd</h2>
 <p>Excel appends an ending newline to comma-separated values files&mdash;not GitHub.</p>
-<h3>21st</h3>
+<h2>21st</h2>
 <p>I restructured some of the data. Two things are tricky. First, it seems GitHub adds a newline at the end of data files. This affects the "results.data.length" variable in Papa Parse. Second, "scatter" only recognizes an array of objects whose attributes are "x" and "y." "X" is unallowed, but objects with "x," "y," and "z" are accepted.</p>
-<h3>20th</h3>
+<h2>20th</h2>
 <p>I separated the data from the JavaScript code and created the corresponding comma-separated values files. I added Papa Parse to feed the data to Chart.js, but manipulating data in JavaScript is somewhat counterintuitive.</p>
-<h3>18th</h3>
+<h2>18th</h2>
 <p>The following is another example of the "scatter" plot by Chart.js.</p>
 <p style="text-align:center"><canvas id=Figure03 width=512px height=384px style="display:inline-block"></canvas></p>
 <p>Note that \(x_i,\varepsilon_i\sim{}N(0,1)\) i.i.d. and \(y_i=x_i+\varepsilon_i\) for all \(i\in\{1,\cdots,100\}\). The following are two examples of "bar" and "horizontalBar" by Chart.js.</p>
 <p style="text-align:center"><canvas id=Figure04 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure05 width=512px height=384px style="display:inline-block"></canvas></p>
 <p>Note that "bar" can include "line," while "line" cannot include "bar."</p>
-<h3>17th</h3>
+<h2>17th</h2>
 <p>This note is initiated. The following is an example of the "line" plot by Chart.js.</p>
 <p style="text-align:center"><canvas id=Figure01 width=512px height=384px style="display:inline-block"></canvas></p>
 <p>The following is an example of the "scatter" plot by Chart.js.</p>
