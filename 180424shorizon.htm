@@ -3,6 +3,7 @@
 <head>
 <meta name=viewport content=width=1024px>
 <link rel=stylesheet href=/notebook/font.css>
+<style>td{text-align:center}</style>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML></script>
 </head>
 <body>
@@ -38,26 +39,26 @@
 <li>So far the papers published in journals have empirically demonstrated the negative relation between the volume of short selling and the stock return <a href=https://doi.org/10.1016/S0304-405X(02)00224-6>(Jones and Lamont, 2002)</a>.</li>
 </ul>
 <p>Here is the data structure.</p>
-<table style="margin:auto;border-collapse:collapse">
+<table>
 <tr>
-<td style="border:1px solid black;text-align:center">Total short interest</td>
-<td style="border:1px solid black;text-align:center">Maturity (tenure)</td>
-<td style="border:1px solid black;text-align:center">Observability</td>
+<td>Total short interest</td>
+<td>Maturity (tenure)</td>
+<td>Observability</td>
 </tr>
 <tr>
-<td style="border:1px solid black;text-align:center">100</td>
-<td style="border:1px solid black;text-align:center">10</td>
-<td style="border:1px solid black;text-align:center">Observable</td>
+<td>100</td>
+<td>10</td>
+<td>Observable</td>
 </tr>
 <tr>
-<td style="border:1px solid black;text-align:center;background:silver">50</td>
-<td style="border:1px solid black;text-align:center;background:silver">5</td>
-<td style="border:1px solid black;text-align:center;background:silver">Unobservable</td>
+<td style="background:silver">50</td>
+<td style="background:silver">5</td>
+<td style="background:silver">Unobservable</td>
 </tr>
 <tr>
-<td style="border:1px solid black;text-align:center;background:silver">50</td>
-<td style="border:1px solid black;text-align:center;background:silver">15</td>
-<td style="border:1px solid black;text-align:center;background:silver">Unobservable</td>
+<td style="background:silver">50</td>
+<td style="background:silver">15</td>
+<td style="background:silver">Unobservable</td>
 </tr>
 </table>
 <ul>
@@ -67,21 +68,21 @@
 <li>Due to this unclear aggregation, the lending cost (or fee) the short sellers must pay is ambiguous.</li>
 </ul>
 This is the way to back out the details.
-<table style="margin:auto;border-collapse:collapse">
+<table>
 <tr>
-<td style="border:1px solid black;text-align:center">Day</td>
-<td style="border:1px solid black;text-align:center">Short interest</td>
-<td style="border:1px solid black;text-align:center">Maturity</td>
+<td>Day</td>
+<td>Short interest</td>
+<td>Maturity</td>
 </tr>
 <tr>
-<td style="border:1px solid black;text-align:center">0</td>
-<td style="border:1px solid black;text-align:center">100</td>
-<td style="border:1px solid black;text-align:center">10</td>
+<td>0</td>
+<td>100</td>
+<td>10</td>
 </tr>
 <tr>
-<td style="border:1px solid black;text-align:center">1</td>
-<td style="border:1px solid black;text-align:center">110</td>
-<td style="border:1px solid black;text-align:center">10.5</td>
+<td>1</td>
+<td>110</td>
+<td>10.5</td>
 </tr>
 </table>
 <ul>
