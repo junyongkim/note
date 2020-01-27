@@ -3,10 +3,7 @@
 <head>
 <meta name=viewport content=width=1024px>
 <link rel=stylesheet href=/notebook/font.css>
-<style>
-span.a{font-family:"LM Sans 10",Calibri}
-code{font-family:"LM Mono 10",Consolas!important}
-</style>
+<style>code{font-family:"LM Mono 10",Consolas!important}</style>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.3/papaparse.min.js></script>
@@ -20,8 +17,8 @@ code{font-family:"LM Mono 10",Consolas!important}
 <body>
 <div style="width:100%;height:22px;position:fixed;top:0;left:0">
 <div style="width:1024px;margin:auto;display:flex;justify-content:space-between">
-<div><a href=/notebook/index.htm>index.htm</a></div>
-<div><a href=https://www.github.com/junyongkim/ target=_blank><span class=a>GitHub</span></a></div>
+<div><a class=_ href=/notebook/index.htm>index.htm</a></div>
+<div><a href=https://www.github.com/junyongkim/ target=_blank>GitHub</a></div>
 </div>
 </div>
 <div style="width:100%;height:calc(100% - 22px);position:fixed;top:22px;left:0;overflow:auto">
@@ -45,20 +42,20 @@ quit;</code></pre>
 <h2>27th</h2>
 <p>I added the following data.</p>
 <ol>
-<li>The Pastor&ndash;Stambaugh liquidity (AggLiq) from <a href=http://finance.wharton.upenn.edu/~stambaug/ target=_blank><span class=a>Robert F. Stambaugh</span></a> (monthly)</li>
-<li>The number of IPOs and the mean first-day return from <a href=https://site.warrington.ufl.edu/ritter/ target=_blank><span class=a>Jay R. Ritter</span></a> (monthly)</li>
-<li>Cyclically Adjusted Price Earnings Ratio (CAPE) from <a href=http://www.econ.yale.edu/~shiller/ target=_blank><span class=a>Robert J. Shiller</span></a> (monthly)</li>
-<li>Betting Against Beta factor (BAB) from <a href=https://www.aqr.com/ target=_blank><span class=a>AQR Capital Management</span></a> (monthly, June 1963=100)</li>
+<li>The Pastor&ndash;Stambaugh liquidity (AggLiq) from <a href=http://finance.wharton.upenn.edu/~stambaug/ target=_blank>Robert F. Stambaugh</a> (monthly)</li>
+<li>The number of IPOs and the mean first-day return from <a href=https://site.warrington.ufl.edu/ritter/ target=_blank>Jay R. Ritter</a> (monthly)</li>
+<li>Cyclically Adjusted Price Earnings Ratio (CAPE) from <a href=http://www.econ.yale.edu/~shiller/ target=_blank>Robert J. Shiller</a> (monthly)</li>
+<li>Betting Against Beta factor (BAB) from <a href=https://www.aqr.com/ target=_blank>AQR Capital Management</a> (monthly, June 1963=100)</li>
 </ol>
 <p style="text-align:center"><canvas id=Figure10 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure11 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure12 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure13 width=512px height=384px style="display:inline-block"></canvas></p>
-<p>It's hard for SAS to update some data. For example, the filename of the uncertainty data from <a href=https://www.sydneyludvigson.com/ target=_blank><span class=a>Sydney C. Ludvigson</span></a> is often revised manually. The stock market confidence indices from <a href=https://som.yale.edu/ target=_blank><span class=a>Yale School of Management</span></a> are also unfriendly as they use a blob address.</p>
+<p>It's hard for SAS to update some data. For example, the filename of the uncertainty data from <a href=https://www.sydneyludvigson.com/ target=_blank>Sydney C. Ludvigson</a> is often revised manually. The stock market confidence indices from <a href=https://som.yale.edu/ target=_blank>Yale School of Management</a> are also unfriendly as they use a blob address.</p>
 <h2>26th</h2>
-<p>First, <a href=https://github.com/junyongkim/notebook/blob/gh-pages/misc/190226chartjs.sas target=_blank><span class=a>this SAS code</span></a> downloads the following data.</p>
+<p>First, <a href=https://github.com/junyongkim/notebook/blob/gh-pages/misc/190226chartjs.sas target=_blank>this SAS code</a> downloads the following data.</p>
 <ol>
-<li>Index of Consumer Sentiment (ICS_ALL) from <a href=http://www.sca.isr.umich.edu/ target=_blank><span class=a>Surveys of Consumers</span></a> (monthly)</li>
-<li>Effective Federal Funds Rate (FEDFUNDS) from <a href=https://fred.stlouisfed.org/ target=_blank><span class=a>Federal Reserve Economic Data</span></a> (monthly)</li>
-<li>The log consumption-aggregate wealth ratio (cay) from <a href=https://sites.google.com/view/martinlettau/ target=_blank><span class=a>Martin Lettau</span></a> (quarterly)</li>
-<li>Fama&ndash;French 5 Factors (2&times;3) (Mkt-RF, SMB, HML, RMW, CMA, and RF) from <a href=http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ target=_blank><span class=a>Kenneth R. French</span></a> (monthly, June 1963=100)</li>
+<li>Index of Consumer Sentiment (ICS_ALL) from <a href=http://www.sca.isr.umich.edu/ target=_blank>Surveys of Consumers</a> (monthly)</li>
+<li>Effective Federal Funds Rate (FEDFUNDS) from <a href=https://fred.stlouisfed.org/ target=_blank>Federal Reserve Economic Data</a> (monthly)</li>
+<li>The log consumption-aggregate wealth ratio (cay) from <a href=https://sites.google.com/view/martinlettau/ target=_blank>Martin Lettau</a> (quarterly)</li>
+<li>Fama&ndash;French 5 Factors (2&times;3) (Mkt-RF, SMB, HML, RMW, CMA, and RF) from <a href=http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ target=_blank>Kenneth R. French</a> (monthly, June 1963=100)</li>
 </ol>
 <p style="text-align:center"><canvas id=Figure06 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure07 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure08 width=512px height=384px style="display:inline-block"></canvas><canvas id=Figure09 width=512px height=384px style="display:inline-block"></canvas></p>
 <p>Second, I reindented the JavaScript code.</p>
