@@ -13,3 +13,5 @@ body{text-size-adjust:100%;font-family:"LM Sans 10",Calibri;font-size:11pt}
 a{text-size-adjust:100%;text-decoration:none;color:blue}
 a._{font-family:"LM Mono 10",Consolas}
 a:hover{text-decoration:underline}
+table{margin:auto;border-collapse:collapse}
+td{height:100px;border:1px solid black}
