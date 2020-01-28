@@ -11,7 +11,7 @@
 @font-face{font-family:"Latin Modern Math";src:url(/notebook/font/latinmodern-math.otf)}
 body{text-size-adjust:100%;font-family:"LM Sans 10",Calibri;font-size:11pt}
 a{text-decoration:none;color:blue}
-a._{font-family:"LM Mono 10",Consolas}
 a:hover{text-decoration:underline}
+a._{font-family:"LM Mono 10",Consolas}
 table{margin:auto;border-collapse:collapse}
 td{border:1px solid black}
