@@ -4,8 +4,8 @@ J Kim
 
 200130
  - 180423multiclu.htm -> 200130multiclu.txt 이동하여 빠르게 작성할 것
- - Figure replotting 필요
- - Daniel and Titman (2006) replicate 필요
+ + Figure replotting 필요
+ + Daniel and Titman (2006) replicate 필요
 
 200129
  - 2017 봄 190115_PrelimPaperResume_FMASubmit -> 바탕 화면 200129_PrelimPaperResume 이동
