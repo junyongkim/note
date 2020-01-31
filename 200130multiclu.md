@@ -4,7 +4,7 @@
 
 ###### 200130
 + 빠른 작성 필요하여 180423multiclu.htm -> 200130multiclu.md 이동
-+ *Figure replotting 필요*
++ *Figure replotting 필요* (fig 3 7 완료)
 + *Daniel and Titman (2006) replicate 필요*
 
 ###### 200129
