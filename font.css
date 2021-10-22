@@ -6,12 +6,14 @@
 @font-face{font-family:"LM Sans 10";src:url(/note/font/lmsans10-bold.otf);font-weight:bold}
 @font-face{font-family:"LM Sans 10";src:url(/note/font/lmsans10-oblique.otf);font-style:oblique}
 @font-face{font-family:"LM Sans 10";src:url(/note/font/lmsans10-boldoblique.otf);font-weight:bold;font-style:oblique}
-@font-face{font-family:"LM Mono 10";src:url(/note/font/lmmono10-regular.otf)}
-@font-face{font-family:"LM Mono 10";src:url(/note/font/lmmono10-italic.otf);font-style:italic}
+@font-face{font-family:"LM Mono Light 10";src:url(/note/font/lmmonolt10-regular.otf)}
+@font-face{font-family:"LM Mono Light 10";src:url(/note/font/lmmonolt10-bold.otf);font-weight:bold}
+@font-face{font-family:"LM Mono Light 10";src:url(/note/font/lmmonolt10-oblique.otf);font-style:oblique}
+@font-face{font-family:"LM Mono Light 10";src:url(/note/font/lmmonolt10-boldoblique.otf);font-weight:bold;font-style:oblique}
 @font-face{font-family:"Latin Modern Math";src:url(/note/font/latinmodern-math.otf)}
 body{text-size-adjust:100%;font-family:"LM Sans 10",Calibri;font-size:11pt}
 a{text-decoration:none;color:blue}
 a:hover{text-decoration:underline}
-a._{font-family:"LM Mono 10",Consolas}
+a._{font-family:"LM Mono Light 10",Consolas}
 table{margin:auto;border-collapse:collapse}
 td{border:1px solid black}
