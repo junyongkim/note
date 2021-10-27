@@ -1,8 +1,8 @@
-Chart.defaults.global.defaultFontFamily="'LM Mono 10',Consolas";
+Chart.defaults.global.defaultFontFamily="'LM Mono Light 10',Consolas";
 Chart.defaults.global.defaultFontSize=11*96/72;
 Papa.parse
 (
-    "/note/misc/190220chartjs1.csv",
+    "misc/190220chartjs1.csv",
     {
         download:true,
         complete:function(results)
@@ -47,7 +47,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190220chartjs2.csv",
+    "misc/190220chartjs2.csv",
     {
         download:true,
         header:true,
@@ -104,7 +104,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190220chartjs3.csv",
+    "misc/190220chartjs3.csv",
     {
         download:true,
         header:true,
@@ -159,7 +159,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190220chartjs4.csv",
+    "misc/190220chartjs4.csv",
     {
         download:true,
         complete:function(results)
@@ -211,7 +211,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190220chartjs5.csv",
+    "misc/190220chartjs5.csv",
     {
         download:true,
         complete:function(results)
@@ -261,7 +261,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190226chartjs1.csv",
+    "misc/190226chartjs1.csv",
     {
         download:true,
         header:true,
@@ -301,7 +301,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190226chartjs2.csv",
+    "misc/190226chartjs2.csv",
     {
         download:true,
         header:true,
@@ -341,7 +341,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190226chartjs3.csv",
+    "misc/190226chartjs3.csv",
     {
         download:true,
         header:true,
@@ -381,7 +381,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190226chartjs4.csv",
+    "misc/190226chartjs4.csv",
     {
         download:true,
         header:true,
@@ -493,7 +493,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190227chartjs1.csv",
+    "misc/190227chartjs1.csv",
     {
         download:true,
         header:true,
@@ -533,7 +533,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190227chartjs2.csv",
+    "misc/190227chartjs2.csv",
     {
         download:true,
         header:true,
@@ -599,7 +599,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190227chartjs3.csv",
+    "misc/190227chartjs3.csv",
     {
         download:true,
         header:true,
@@ -639,7 +639,7 @@ Papa.parse
 );
 Papa.parse
 (
-    "/note/misc/190227chartjs4.csv",
+    "misc/190227chartjs4.csv",
     {
         download:true,
         header:true,

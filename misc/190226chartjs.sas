@@ -16,7 +16,7 @@ data _190226chartjs1(keep=x y);
     x=year(x)+month(x)/12;
 run;
 proc export data=_190226chartjs1 replace
-    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190226chartjs1.csv';
+    outfile='!USERPROFILE\Desktop\190226chartjs1.csv';
 run;
 filename FEDFUNDS temp;
 proc http method="get" out=FEDFUNDS
@@ -30,21 +30,21 @@ data _190226chartjs2(keep=x y);
     x=year(DATE)+month(DATE)/12;
 run;
 proc export data=_190226chartjs2 replace
-    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190226chartjs2.csv';
+    outfile='!USERPROFILE\Desktop\190226chartjs2.csv';
 run;
 filename cay_curr temp;
 proc http method="get" out=cay_curr
-    url='https://drive.google.com/uc?export=download&id=1upTaL-6iv-9BI8TI_qgKxyCMk1nkVX7L';
+    url='https://drive.google.com/uc?export=download&id=1iju5xUGE0l7ZnFHMZtFDzunI0V85Zi5y';
 run;
 data _190226chartjs3;
-    infile cay_curr dsd firstobs=3;
-    input x cpce a y cay;
-    x=int(x/100)+mod(x,100)/4;
-    drop cpce--y;
+    infile cay_curr dsd firstobs=2;
+    input x yymmdd10. +1 c w y cay;
+    x=year(x)+month(x)/12;
+    drop c--y;
     rename cay=y;
 run;
 proc export data=_190226chartjs3 replace
-    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190226chartjs3.csv';
+    outfile='!USERPROFILE\Desktop\190226chartjs3.csv';
 run;
 filename FF5F23Z1 "%sysfunc(getoption(WORK))\F-F_Research_Data_5_Factors_2x3_CSV.zip";
 filename FF5F23Z2 zip "%sysfunc(getoption(WORK))\F-F_Research_Data_5_Factors_2x3_CSV.zip";
@@ -52,7 +52,7 @@ proc http method="get" out=FF5F23Z1
     url="http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_CSV.zip";
 run;
 data _190226chartjs4(keep=x y1-y6);
-    infile FF5F23Z2(F-F_Research_Data_5_Factors_2x3.CSV) dsd firstobs=5;
+    infile FF5F23Z2(F-F_Research_Data_5_Factors_2x3.csv) dsd firstobs=5;
     input x Mkt_RF SMB HML RMW CMA RF;
     if x then n+1;
     if n=_n_;
@@ -66,11 +66,11 @@ data _190226chartjs4(keep=x y1-y6);
     end;
 run;
 proc export data=_190226chartjs4 replace
-    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190226chartjs4.csv';
+    outfile='!USERPROFILE\Desktop\190226chartjs4.csv';
 run;
 filename liq_data temp;
 proc http method="get" out=liq_data
-    url="http://finance.wharton.upenn.edu/~stambaug/liq_data_1962_2017.txt";
+    url="http://finance.wharton.upenn.edu/~stambaug/liq_data_1962_2020.txt";
 run;
 data _190227chartjs1(keep=x y);
     infile liq_data expandtabs firstobs=12;
@@ -78,11 +78,11 @@ data _190227chartjs1(keep=x y);
     x=int(x/100)+mod(x,100)/12;
 run;
 proc export data=_190227chartjs1 replace
-    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190227chartjs1.csv';
+    outfile='!USERPROFILE\Desktop\190227chartjs1.csv';
 run;
-filename IPOALL "%sysfunc(getoption(WORK))\IPOALL_2018.xlsx";
+filename IPOALL "%sysfunc(getoption(WORK))\IPOALL_2020.xlsx";
 proc http method="get" out=IPOALL
-    url="https://site.warrington.ufl.edu/ritter/files/2019/01/IPOALL_2018.xlsx";
+    url="https://site.warrington.ufl.edu/ritter/files/IPOALL_2020.xlsx";
 run;
 proc import datafile=IPOALL dbms=excel out=_190227chartjs2 replace;
     getnames=no;
@@ -101,7 +101,7 @@ data _190227chartjs2(keep=x y1-y4);
     y4=input(F6,4.);
 run;
 proc export data=_190227chartjs2 replace
-    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190227chartjs2.csv';
+    outfile='!USERPROFILE\Desktop\190227chartjs2.csv';
 run;
 filename ie_data "%sysfunc(getoption(WORK))\ie_data.xlsx";
 proc http method="get" out=ie_data
@@ -114,11 +114,11 @@ run;
 data _190227chartjs3(keep=x y);
     set _190227chartjs3;
     x=int(F1)+mod(100*F1,100)/12;
-    y=input(F11,8.2);
+    y=input(F13,8.2);
     if y;
 run;
 proc export data=_190227chartjs3 replace
-    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190227chartjs3.csv';
+    outfile='!USERPROFILE\Desktop\190227chartjs3.csv';
 run;
 filename Betting "%sysfunc(getoption(WORK))\Betting-Against-Beta-Equity-Factors-Monthly.xlsx";
 proc http method="get" out=Betting
@@ -137,6 +137,6 @@ data _190227chartjs4(keep=x y);
     y=100*exp(l);
 run;
 proc export data=_190227chartjs4 replace
-    outfile='%SystemDrive%\Users\%USERNAME\Desktop\190227chartjs4.csv';
+    outfile='!USERPROFILE\Desktop\190227chartjs4.csv';
 run;
 quit;
